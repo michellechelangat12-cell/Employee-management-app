@@ -6,7 +6,7 @@
     <title>New contact</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body id="form-page">
    <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
@@ -16,7 +16,7 @@
    </nav>
    <div class="container">
     <h1>Add new contact</h1>
-    <form action="submit_contact.php" method="post">
+    <form id="contactForm">
         <label for ="id">ID:</label>
         <input type="text" id="id" name="id" placeholder="Enter Identification Number"><br><br>
         <label for="Fname">Firstname:</label>
@@ -38,7 +38,7 @@
         <input type="date" id="date of birth" name="date of birth"><br><br>
         <label for="position">Position:</label>
         <select id="position" name="position" >
-            <option value="">--Select Position if Official--</option>
+            <option value="">--Select Position if Official--</option>   
             <option value="manager">Manager</option>
             <option value="developer">Developer</option>
             <option value="designer">Designer</option>
@@ -48,4 +48,5 @@
     </form>
    
 </body>
+<script src="script.js"></script>
 </html>
